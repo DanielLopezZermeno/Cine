@@ -1,5 +1,5 @@
 export interface Pelicula {
-    titulo: string;
-    genero: string;
-    duracion: string;
-  }
+  titulo: string;
+  genero: string;
+  duracion: string;
+}

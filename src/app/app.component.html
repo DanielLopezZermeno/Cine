@@ -20,12 +20,7 @@
     </ul>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <form class="form-inline" (ngSubmit)="buscar($event)" >
-          <div class="form-group">
-            <input type="text" class="form-control mr-2 " [(ngModel)]="terminoBusqueda" name="terminoBusqueda" style="font-size: 1.5rem;" required>
-          <button type="submit" class="btn btn-primary" style="font-size: 1.5rem;" routerLink="/buscador">Buscar</button>
-          </div>
-        </form>        
+             <app-buscador></app-buscador>
       </li>
     </ul>
   </div>
