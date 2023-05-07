@@ -1,0 +1,8 @@
+<div *ngIf="resultados.length > 0" class="my-4">
+  <h2 class="mb-3">Resultados de la búsqueda:</h2>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let resultado of resultados">
+      <a [routerLink]="['/pelicula', resultado.id]">{{ resultado.titulo }}</a>
+    </li>
+  </ul>
+</div>

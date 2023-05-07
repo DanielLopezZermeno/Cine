@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
-import { CarteleraServicioService } from './cartelera-servicio.service';
+import { CarteleraServicioService } from '../cartelera-servicio.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-buscador',
+  templateUrl: './buscador.component.html',
+  styleUrls: ['./buscador.component.css']
 })
-export class AppComponent {
-  title = 'Cine';
-  terminoBusqueda: string="";
+export class BuscadorComponent {
+    terminoBusqueda: string="";
     resultados:any=[];
 
     constructor(private carteleraService: CarteleraServicioService) {
@@ -21,4 +20,5 @@ export class AppComponent {
       this.resultados = this.carteleraService.buscarPeliculas(this.terminoBusqueda);
     }
 
+    
 }
