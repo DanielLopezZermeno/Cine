@@ -1,7 +1,7 @@
 <form class="form-inline" (ngSubmit)="buscar($event)" >
   <div class="form-group">
     <input type="text" class="form-control mr-2 " [(ngModel)]="terminoBusqueda" name="terminoBusqueda" style="font-size: 1.5rem;" required>
-  <button type="submit" class="btn btn-primary" style="font-size: 1.5rem;" routerLink="/buscador">Buscar</button>
+  <button type="submit" class="btn btn-primary" style="font-size: 1.5rem;" >Buscar</button>
   </div>
 </form>   
 <div *ngIf="resultados.length > 0" class="my-4">
